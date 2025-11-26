@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>BNCC Feedback Form</h2>
+
+      <label>Name</label>
+      <input type="text" id="name" />
+
+      <label>Email</label>
+      <input type="email" id="email" />
+
+      <label>Event Name</label>
+      <input type="text" id="eventName" />
+
+      <label>Division</label>
+      <select id="division">
+        <option value="LnT">LnT</option>
+        <option value="EEO">EEO</option>
+        <option value="PR">PR</option>
+        <option value="HRD">HRD</option>
+        <option value="RnD">RnD</option>
+      </select>
+
+      <label>Rating (1-5)</label>
+      <input type="number" id="rating" min="1" max="5" />
+
+      <label>Comment</label>
+      <textarea id="comment"></textarea>
+
+      <label>Suggestion</label>
+      <textarea id="suggestion"></textarea>
+
+      <button onclick="submitFeedback()">Submit</button>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
